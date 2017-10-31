@@ -1,0 +1,61 @@
+@-webkit-keyframes animateIn {
+    0% {
+        -webkit-transform: scale(0.1)
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes animateOut {
+    0% {
+        -webkit-transform: scale(1)
+    }
+    100% {
+        -webkit-transform: scale(0.1);
+    }
+}
+
+page-register {
+    .logo-name {
+        margin-top: -18%;
+        margin-left: -85%;
+        -webkit-transform: scale(0.3);
+    }
+    .fa-6 {
+        font-size: 13em;
+        margin-top: -35%;
+    }
+    .item.item-input, .register, .back {
+        background-color: #3d65ba;
+        border-color: #fff;
+        color: #fff;      
+    }
+
+    .register {
+        margin-top: 15%;
+    }
+
+    .back {
+            border-top: none;
+    }
+
+    .animate-In {
+        position: relative;
+        -webkit-animation: animateIn ease-in 1;
+        animation: animateIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+    .animate-Out {
+        position: relative;
+        -webkit-animation: animateOut ease-in 1;
+        animation: animateOut ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+}

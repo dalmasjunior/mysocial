@@ -1,0 +1,34 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class="hidden"><ion-navbar></ion-navbar></ion-header>
+
+<ion-content padding class="page">
+  <div>
+    <div class="logo">
+      <p class="logo-name" [class.animate-logo]="animateOut" [class.animate-In-Logo]="animateIn"><br></p>
+    </div>
+    <div class="form-login" [class.animate-form]="animateOut" [class.animate-In]="animateIn">
+      <ion-list inset>
+        <ion-item>
+          <ion-label floating>Username</ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item>      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>          
+      </ion-list>
+      <button ion-button class="login" full outline >Enter</button>
+      <button ion-button class="register" full outline (click)="goRegister()">Register</button>
+    </div>
+    <ion-fab center bottom>
+      <button ion-fab mini><ion-icon name="help"></ion-icon></button>
+    </ion-fab>
+  </div>
+</ion-content>
+<script>
+</script>

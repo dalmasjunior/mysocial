@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@-webkit-keyframes animateLogo {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
+    }
+    100% {
+        margin-top: -18%;
+        margin-left: -85%;
+        -webkit-transform: scale(0.3);       
+    }
+}
+@-webkit-keyframes animateInLogo {
+    0% {
+        -webkit-transform: scale(0.3);
+        margin-top: -18%;
+        margin-left: -85%;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        margin-top: 1%;
+        margin-left: 0%;
+        @include transform(rotate(#{-23}deg));
+    }
+}
+@-webkit-keyframes animateIn {
+    0% {
+        -webkit-transform: scale(0.1)
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+@-webkit-keyframes animateForm {
+    0% {
+        -webkit-transform: translate3d(0,0,0);
+    }
+    100% {
+        margin-top: -18%;
+        -webkit-transform: scale(0.1);
+    }
+}
+
+$fontFamily: 'Pacifico', cursive;
+
+
+page-login {
+    .logo-name {
+        @include transform(rotate(#{-23}deg));
+    }
+
+    .item.item-input, .login, .register {
+        background-color: #3d65ba;
+        border-color: #fff;
+        color: #fff;      
+    }
+
+    .register {
+        border-top: none;
+    }
+
+    .animate-logo {
+        position: relative;
+        -webkit-animation: animateLogo ease-in 1;
+        animation: animateLogo ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+
+    .animate-In-Logo {
+        position: relative;
+        -webkit-animation: animateInLogo ease-in 1;
+        animation: animateInLogo ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+
+    .animate-In {
+        position: relative;
+        -webkit-animation: animateIn ease-in 1;
+        animation: animateIn ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+
+    .animate-form {
+        position: relative;
+        -webkit-animation: animateForm ease-in 1;
+        animation: animateForm ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 750ms;
+        animation-duration: 750ms;
+    }
+    
+}

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header class="hidden"><ion-navbar></ion-navbar></ion-header>
+
+
+<ion-content padding class="page">
+  <div class="logo">
+    <p class="logo-name"><br></p>
+  </div>
+  <div class="form-register" [class.animate-In]="animateIn" [class.animate-Out]="animateOut">
+    <i class="fa fa-user-plus fa-6" aria-hidden="true"></i>  
+    <ion-list inset>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>      
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Retype Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>          
+    </ion-list>
+    <button ion-button class="register" full outline (click)="goBack()">Register</button>
+    <button ion-button class="back" full outline (click)="goBack()">Back</button>
+  </div>
+</ion-content>
