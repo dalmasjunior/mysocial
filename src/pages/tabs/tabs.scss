@@ -1,0 +1,18 @@
+page-tabs {
+    .home {
+        color: #E95C52;
+        background-color: #E95C52;
+    }
+    .inactive {
+        color: #E64EFA;
+    }
+    $tabs-md-tab-text-color: #E64EFA;
+    $tabs-ios-tab-color-inactive: #E64EFA;
+    $tabs-md-tab-color-inactive: #E95C52;
+    $tabs-ios-tab-text-color: #E95C52;
+
+    $tabs-md-tab-color-active: #E95C52;
+    $tabs-md-tab-text-color-active: #E95C52;
+    $tabs-ios-tab-color-active: #E95C52;
+    $tabs-ios-tab-text-color-active: #E95C52;
+}
